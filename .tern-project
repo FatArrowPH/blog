@@ -1,0 +1,10 @@
+{
+  "loadEagerly": [
+    "*.js",
+    "bin/*.js",
+    "lib/*.js"
+  ],
+  "plugins": {
+    "node": {}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Fat Arrow Static Blog Generator",
+  "version": "1.0.0",
+  "author": "Dido Arellano <dido@fat-arrow.com>",
+  "license": "MIT",
+  "dependencies": {
+    "metalsmith": "2.1.0"
+  }
+}
