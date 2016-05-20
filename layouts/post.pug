@@ -1,9 +1,18 @@
 article
   header.blog-header
     h1.post-title= title
-    p.post-meta by
-      span.post-author  #{author}
+    p.post-meta
+      ="by "
+      span.post-author #{author.name}
       time(datetime=date).post-date= humanDate
       a(href="#").post-category Category
 
   div.article-body!= contents
+
+  div.post-article
+    div.author-profile
+      h1 About the author
+      div.author-profile__pic: img(src=author.img width="80")
+      p.author-profile__text
+        strong #{author.name}
+        |  #{author.profile}

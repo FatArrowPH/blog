@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dido Arellano",
+    "profile": "is a full-stack web developer specializing in front-end JavaScript. He has been teaching JavaScript for more than 5 years and enjoys nothing more than helping guide others through their programming journey.",
+    "img": "/img/dido.jpg",
+    "dir": "dido"
+  },
+  {
+    "name": "Datu Arellano",
+    "profile": "wears many hats. When not developing websites, he is a visual artist and musician, and an active member of the Anino Shadowplay Collective. He has 10 years experience in teaching HTML and CSS development.",
+    "img": "/img/datu.jpg",
+    "dir": "datu"
+  },
+  {
+    "name": "Kitkat Dayrit",
+    "profile": "",
+    "img": "",
+    "dir": "kitkat"
+  }
+]
