@@ -3,7 +3,7 @@ article
     h1.post-title= title
     p.post-meta by
       span.post-author  #{author}
-      time(datetime=date).post-date= date
+      time(datetime=date).post-date= humanDate
       a(href="#").post-category Category
 
   div.article-body!= contents
