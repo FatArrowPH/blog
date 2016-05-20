@@ -7,6 +7,11 @@ article
       time(datetime=date).post-date= humanDate
       a(href="#").post-category Category
 
+  if note
+    div.pre-article
+      div.article-note
+        !=note
+
   div.article-body!= contents
 
   div.post-article
