@@ -9,11 +9,12 @@ div.featured-article
 
 div.blog-roll
   ul.article-list
-    li.article-list__item
-      a(href="").article-list__anchor
-        h2.post-title Post Title
-        p.post-meta
-          span.post-author by Author Name
-          span.post-date posted
-            time(datetime="") Date
-        p.post-excerpt Post Excerpt
+    each post in posts
+      li.article-list__item
+        a(href="/blog/" + post.slug).article-list__anchor
+          h2.post-title= post.title
+          p.post-meta
+            span.post-author by #{post.author.name}
+            span.post-date posted
+              time(datetime=post.date) #{post.humanDate}
+          p.post-excerpt!= post.excerpt

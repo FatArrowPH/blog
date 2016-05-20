@@ -1,5 +1,6 @@
 const metalsmith = require('metalsmith')
 const markdown = require('metalsmith-markdown')
+const collections = require('metalsmith-collections')
 const layouts = require('metalsmith-layouts')
 const flatten = require('./lib/metalsmith-flatten')
 const slug = require('./lib/metalsmith-slug')
@@ -14,6 +15,13 @@ metalsmith(__dirname)
   .use(drafts())
   .use(authors(authorsConfig))
   .use(flatten())
+  .use(collections({
+    posts: {
+      pattern: '*.md',
+      sortBy: 'date',
+      reverse: true
+    }
+  }))
   .use(slug())
   .use(markdown())
   .use(markdownFrontMatter('note'))
