@@ -1,0 +1,9 @@
+article
+  header.blog-header
+    h1.post-title= title
+    p.post-meta by
+      span.post-author  #{author}
+      time(datetime=date).post-date= date
+      a(href="#").post-category Category
+
+  div.article-body!= contents
