@@ -9,6 +9,7 @@ const drafts = require('./lib/metalsmith-drafts')
 const authors = require('./lib/metalsmith-authors')
 const markdownFrontMatter = require('./lib/metalsmith-markdown-front-matter')
 const index = require('./lib/metalsmith-index')
+const featured = require('./lib/metalsmith-featured')
 const authorsConfig = require('./src/authors.json')
 
 metalsmith(__dirname)
@@ -26,6 +27,9 @@ metalsmith(__dirname)
   .use(markdown())
   .use(markdownFrontMatter('note'))
   .use(humanizeDate())
+  .use(featured({
+    collection: 'posts'
+  }))
   .use(index())
   .use(layouts({ engine: 'pug', default: 'post.pug', pretty: true }))
   .build(function (err) {
