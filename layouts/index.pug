@@ -1,21 +1,18 @@
+mixin articleItem(post)
+  a(href="/blog/" + post.slug).article-list__anchor
+    h2.post-title= post.title
+    p.post-meta
+      span.post-author by #{post.author.name}
+      span.post-date posted
+        time(datetime=post.date) #{post.humanDate}
+    p.post-excerpt!= post.excerpt
+
 if featured
   div.featured-article
-    a(href="/blog/" + featured.slug).article-list__anchor
-      h2.post-title= featured.title
-      p.post-meta
-        span.post-author by #{featured.author.name}
-        span.post-date posted
-          time(datetime=featured.date) #{featured.humanDate}
-      p.post-excerpt!= featured.excerpt
+    +articleItem(featured)
 
 div.blog-roll
   ul.article-list
     each post in posts
       li.article-list__item
-        a(href="/blog/" + post.slug).article-list__anchor
-          h2.post-title= post.title
-          p.post-meta
-            span.post-author by #{post.author.name}
-            span.post-date posted
-              time(datetime=post.date) #{post.humanDate}
-          p.post-excerpt!= post.excerpt
+        +articleItem(post)
