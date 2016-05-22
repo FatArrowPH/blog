@@ -1,11 +1,12 @@
-div.featured-article
-  a(href="#").article-list__anchor
-    h2.post-title Featured Post Title
-    p.post-meta
-      span.post-author by Author Name
-      span.post-date posted
-        time(datetime="") Date
-    p.post-excerpt Featured Post Excerpt
+if featured
+  div.featured-article
+    a(href="/blog/" + featured.slug).article-list__anchor
+      h2.post-title= featured.title
+      p.post-meta
+        span.post-author by #{featured.author.name}
+        span.post-date posted
+          time(datetime=featured.date) #{featured.humanDate}
+      p.post-excerpt!= featured.excerpt
 
 div.blog-roll
   ul.article-list
