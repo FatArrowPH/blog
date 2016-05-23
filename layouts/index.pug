@@ -13,6 +13,6 @@ if featured
 
 div.blog-roll
   ul.article-list
-    each post in posts
+    each post in posts.filter(p => p !== featured)
       li.article-list__item
         +articleItem(post)
