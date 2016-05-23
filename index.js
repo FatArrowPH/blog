@@ -1,6 +1,7 @@
 const metalsmith = require('metalsmith')
 const markdown = require('metalsmith-markdown')
 const collections = require('metalsmith-collections')
+const excerpts = require('metalsmith-excerpts')
 const layouts = require('metalsmith-layouts')
 const flatten = require('./lib/metalsmith-flatten')
 const slug = require('./lib/metalsmith-slug')
@@ -26,6 +27,7 @@ metalsmith(__dirname)
   .use(slug())
   .use(markdown())
   .use(markdownFrontMatter('note'))
+  .use(excerpts())
   .use(humanizeDate())
   .use(featured({
     collection: 'posts'
