@@ -5,7 +5,7 @@ mixin articleItem(post)
       span.post-author by #{post.author.name}
       span.post-date posted
         time(datetime=post.date) #{post.humanDate}
-    p.post-excerpt!= post.excerpt
+    div.post-excerpt!= post.excerpt
 
 if featured
   div.featured-article
