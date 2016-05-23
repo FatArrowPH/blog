@@ -26,8 +26,8 @@ metalsmith(__dirname)
   }))
   .use(slug())
   .use(markdown())
-  .use(markdownFrontMatter('note'))
   .use(excerpts())
+  .use(markdownFrontMatter('note', 'excerpt'))
   .use(humanizeDate())
   .use(featured({
     collection: 'posts'
