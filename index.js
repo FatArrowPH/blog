@@ -3,6 +3,7 @@ const markdown = require('metalsmith-markdown')
 const collections = require('metalsmith-collections')
 const excerpts = require('metalsmith-excerpts')
 const layouts = require('metalsmith-layouts')
+const watch = require('metalsmith-watch')
 const flatten = require('./lib/metalsmith-flatten')
 const slug = require('./lib/metalsmith-slug')
 const humanizeDate = require('./lib/metalsmith-humanize-date')
@@ -34,6 +35,12 @@ metalsmith(__dirname)
   }))
   .use(index())
   .use(layouts({ engine: 'pug', default: 'post.pug', pretty: true }))
+  .use(watch({
+    paths: {
+      '${source}/**/*': true,
+      'layouts/*': '**/*'
+    }
+  }))
   .build(function (err) {
     if (err) console.log(err)
   })
