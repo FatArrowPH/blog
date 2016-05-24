@@ -1,11 +1,4 @@
-mixin articleItem(post)
-  a(href="/blog/" + post.slug).article-list__anchor
-    h2.post-title= post.title
-    p.post-meta
-      span.post-author by #{post.author.name}
-      span.post-date posted
-        time(datetime=post.date) #{post.humanDate}
-    div.post-excerpt!= post.excerpt
+include mixin-article-item
 
 if featured
   div.featured-article

@@ -1,3 +1,5 @@
+include mixin-article-item
+
 article
   header.blog-header
     h1.post-title= title
@@ -21,3 +23,12 @@ article
       p.author-profile__text
         strong #{author.name}
         |  #{author.profile}
+
+    - const allPosts = authors[author.name].posts
+    if allPosts.length > 1
+      div.more-articles
+        h1 Recent Posts
+        ul.article-list
+          each post in allPosts.filter(p => p.slug !== slug).slice(0, 3)
+            li.article-list__item
+              +articleItem(post)
