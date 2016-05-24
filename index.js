@@ -47,6 +47,8 @@ metalsmith(__dirname)
       'layouts/*': '**/*'
     }
   }))
-  .build(function (err) {
-    if (err) console.log(err)
+  .build(function (err, files) {
+    if (err) return console.log(err)
+    console.log('Built:')
+    console.log(' ', Object.keys(files).join('\n  '))
   })
