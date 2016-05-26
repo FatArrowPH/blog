@@ -1,11 +1,8 @@
+include mixin-blog-roll
 include mixin-article-item
 
 if featured
   div.featured-article
     +articleItem(featured)
 
-div.blog-roll
-  ul.article-list
-    each post in posts.filter(p => p !== featured)
-      li.article-list__item
-        +articleItem(post)
++blogRoll(posts.filter(p => p !== featured))

@@ -1,0 +1,8 @@
+include mixin-article-item
+
+mixin blogRoll (posts)
+  div.blog-roll
+    ul.article-list
+      each post in posts
+        li.article-list__item
+          +articleItem(post)
