@@ -9,7 +9,7 @@ const ignore = require('metalsmith-ignore')
 const flatten = require('./lib/metalsmith-flatten')
 const slug = require('./lib/metalsmith-slug')
 const humanizeDate = require('./lib/metalsmith-humanize-date')
-const drafts = require('./lib/metalsmith-drafts')
+const drafter = require('./lib/metalsmith-drafts')
 const authors = require('./lib/metalsmith-authors')
 const authorPages = require('./lib/metalsmith-author-pages')
 const markdownFrontMatter = require('./lib/metalsmith-markdown-front-matter')
@@ -21,6 +21,7 @@ const authorsConfig = require('./src/authors.json')
 
 const noop = () => (f, m, d) => d()
 const watch = process.argv[2] === 'watch' ? watcher : noop
+const drafts = process.env.NODE_ENV !== 'development' ? drafter : noop
 
 metalsmith(__dirname)
   .use(drafts())
