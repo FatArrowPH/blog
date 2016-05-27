@@ -5,7 +5,7 @@ article
     h1.post-title= title
     p.post-meta
       ="by "
-      span.post-author #{author.name}
+      a(href="/blog/author/" + author.slug): span.post-author #{author.name}
       time(datetime=date).post-date= humanDate
 
   if note
