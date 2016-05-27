@@ -4,5 +4,5 @@ mixin articleItem (post)
     p.post-meta
       span.post-author by #{post.author.name}
       span.post-date posted
-        time(datetime=post.date) #{post.humanDate}
+        time(datetime=post.date)  #{post.humanDate}
     div.post-excerpt!= post.excerpt
