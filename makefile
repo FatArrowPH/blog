@@ -1,7 +1,9 @@
 watch:
-	@node index.js watch
+	@export NODE_ENV=development; \
+	node index.js watch
 
 build:
-	@node index.js
+	@export NODE_ENV=development; \
+	node index.js
 
 .PHONY: watch build
