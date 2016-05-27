@@ -1,3 +1,4 @@
+include mixin-blog-categories
 include mixin-blog-roll
 include mixin-article-item
 
@@ -6,3 +7,4 @@ if featured
     +articleItem(featured)
 
 +blogRoll(posts.filter(p => p !== featured))
++blogCategories(authors)
