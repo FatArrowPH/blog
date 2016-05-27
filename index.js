@@ -19,7 +19,8 @@ const codewrap = require('./lib/metalsmith-codewrap')
 const json = require('./lib/metalsmith-json')
 const authorsConfig = require('./src/authors.json')
 
-const watch = process.argv[2] === 'watch' ? watcher : () => (f, m, d) => d()
+const noop = () => (f, m, d) => d()
+const watch = process.argv[2] === 'watch' ? watcher : noop
 
 metalsmith(__dirname)
   .use(drafts())
