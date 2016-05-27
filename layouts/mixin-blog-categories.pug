@@ -1,0 +1,7 @@
+mixin blogCategories (authors)
+  div.blog-categories
+    h1 Authors
+    ul.category-list
+    each author in authors
+      li.category-list__item
+        a(href="/blog/author/" + author.slug)= author.name

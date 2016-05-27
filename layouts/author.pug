@@ -1,0 +1,9 @@
+include mixin-blog-categories
+include mixin-blog-roll
+
+- let authorsPosts = posts.length ? posts : []
+- let heading = posts.length ? `Posts by ${author}` : `${author} doesn't have any posts yet.`
+div
+  h1= heading
++blogRoll(authorsPosts)
++blogCategories(authors)
