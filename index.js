@@ -25,7 +25,7 @@ const drafts = process.env.NODE_ENV !== 'development' ? drafter : noop
 
 metalsmith(__dirname)
   .use(drafts())
-  .use(ignore('**/.*'))
+  .use(ignore(['**/.*', '**/_*']))
   .use(authors(authorsConfig))
   .use(authorPages())
   .use(flatten())
