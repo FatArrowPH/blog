@@ -23,7 +23,7 @@ article
         strong #{author.name}
         |  #{author.profile}
 
-    - const allPosts = authors[author.name].posts
+    - const allPosts = author.posts
     if allPosts.length > 1
       div.more-articles
         h1 Recent Posts
