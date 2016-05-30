@@ -6,6 +6,7 @@ const layouts = require('metalsmith-layouts')
 const prism = require('metalsmith-prism')
 const watcher = require('metalsmith-watch')
 const ignore = require('metalsmith-ignore')
+const md = require('marked')
 const flatten = require('./lib/metalsmith-flatten')
 const slug = require('./lib/metalsmith-slug')
 const humanizeDate = require('./lib/metalsmith-humanize-date')
@@ -51,7 +52,7 @@ metalsmith(__dirname)
     collection: 'posts'
   }))
   .use(index())
-  .use(layouts({ engine: 'pug', default: 'post.pug', pretty: true }))
+  .use(layouts({ engine: 'pug', default: 'post.pug', pretty: true, md }))
   .use(json())
   .use(watch({
     paths: {

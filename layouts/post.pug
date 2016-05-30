@@ -19,9 +19,8 @@ article
     div.author-profile
       h1 About the author
       div.author-profile__pic: img(src=author.img width="80")
-      p.author-profile__text
-        strong #{author.name}
-        |  #{author.profile}
+      div.author-profile__text
+        != md(author.profile)
 
     - const allPosts = author.posts
     if allPosts.length > 1
