@@ -19,14 +19,17 @@ const featured = require('./lib/metalsmith-featured')
 const codewrap = require('./lib/metalsmith-codewrap')
 const json = require('./lib/metalsmith-json')
 const mirror = require('./lib/metalsmith-mirror-directories')
+const sampler = require('./lib/metalsmith-sample')
 const authorsConfig = require('./src/authors.json')
 
 const noop = () => (f, m, d) => d()
 const watch = process.argv[2] === 'watch' ? watcher : noop
 const drafts = process.env.NODE_ENV !== 'development' ? drafter : noop
+const sample = process.env.NODE_ENV === 'development' ? sampler : noop
 
 metalsmith(__dirname)
   .use(drafts())
+  .use(sample())
   .use(ignore(['**/.*', '**/_*']))
   .use(mirror('blog-assets'))
   .use(authors(authorsConfig))
