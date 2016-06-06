@@ -14,6 +14,10 @@ The [Manila Web Makers][https://www.facebook.com/groups/ManilaWebMakers/] held i
 ## My Journey to the Perfect CSS Preprocessor
 Jerico Aragon, Senior Web Developer and Solutions Architect at Netfluence Corporation, shared his thoughts and experience in choosing which CSS pre-processor to adopt.
 
+He has experimented with LESS, Sass, and Stylus and cautions against getting too caught up in the power that they provide. He calls out nested selectors as one of the many pitfalls of CSS pre-processors.
+
+Jerico argues that, in the end, the choice is not that big of a deal. Pre-processors help you solve particular pain points in vanilla CSS but they won't guarantee a good architecture, which is the bigger issue with medium to large code bases.
+
 
 ## Cubic Bezi... Yey!
 Datu Arellano, co-founder and instructor at Fat Arrow, clued us in on the `cubic-bezier` CSS function.
