@@ -18,6 +18,10 @@ He has experimented with LESS, Sass, and Stylus and cautions against getting too
 
 Jerico argues that, in the end, the choice is not that big of a deal. Pre-processors help you solve particular pain points in vanilla CSS but they won't guarantee a good architecture, which is the bigger issue with medium to large code bases.
 
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ## Cubic Bezi... Yey!
 Datu Arellano, co-founder and instructor at Fat Arrow, clued us in on the `cubic-bezier` CSS function.
@@ -25,6 +29,11 @@ Datu Arellano, co-founder and instructor at Fat Arrow, clued us in on the `cubic
 He broke down the syntax of the function and visually demonstrated how each argument affects the animation. He also showed how the presets convert into their `cubic-bezier` form. I don't get much opportunity to use this function as, more often than not, I just use the presets or the defaults. With a new-found appreciation for timing functions and UI animation in general, I might play around with `cubic-bezier` in my next project.
 
 To close his talk, Datu shared the importance of animation for user interfaces and some best practices from Google's Material Design and Apple's Human Interface Guidelines.
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ## Context Driven Testing
 Karlo Abapo, Quality Assurance Manager at YOYO Holdings, gave an improptu talk on the context driven approach to testing software.
