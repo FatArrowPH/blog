@@ -28,3 +28,5 @@ To close his talk, Datu shared the importance of animation for user interfaces a
 
 ## Context Driven Testing
 Karlo Abapo, Quality Assurance Manager at YOYO Holdings, gave an improptu talk on the context driven approach to testing software.
+
+As Karlo discussed the principles of [context-driven testing](http://context-driven-testing.com/), it brought to mind the [Agile Manifesto](http://www.agilemanifesto.org/). While context-driven testing is not a part of Agile nor can it be called Agile testing, their principles seem roughly analogous. And, from a high-level perspective, both advocate for adaptive rather than rigid processes.
