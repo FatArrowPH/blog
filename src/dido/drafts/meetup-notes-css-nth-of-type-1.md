@@ -14,7 +14,7 @@ The [Manila Web Makers](https://www.facebook.com/groups/ManilaWebMakers/) held i
 ## My Journey to the Perfect CSS Preprocessor
 Jerico Aragon, Senior Web Developer and Solutions Architect at Netfluence Corporation, shared his thoughts and experience in choosing which CSS pre-processor to adopt.
 
-He has experimented with LESS, Sass, and Stylus and cautions against getting too caught up in the power that they provide. He calls out nested selectors as one of the many pitfalls of CSS pre-processors.
+He has experimented with LESS, Sass, and Stylus and cautions against getting too caught up in the power that they provide. He calls out nested selectors as [one of the many pitfalls of CSS pre-processors](http://thesassway.com/beginner/the-inception-rule#css-selector-nightmare).
 
 Jerico argues that, in the end, the choice is not that big of a deal. Pre-processors help you solve particular pain points in vanilla CSS but they won't guarantee a good architecture, which is the bigger issue with medium to large code bases.
 
@@ -28,7 +28,7 @@ Datu Arellano, co-founder and instructor at Fat Arrow, clued us in on the `cubic
 
 He broke down the syntax of the function and visually demonstrated how each argument affects the animation. He also showed how the presets convert into their `cubic-bezier` form. I don't get much opportunity to use this function as, more often than not, I just use the presets or the defaults. With a new-found appreciation for timing functions and UI animation in general, I might play around with `cubic-bezier` in my next project.
 
-To close his talk, Datu shared the importance of animation for user interfaces and some best practices from Google's Material Design and Apple's Human Interface Guidelines.
+To close his talk, Datu shared the importance of animation for user interfaces and some best practices from [Google's Material Design](https://material.google.com/motion/material-motion.html) and [Apple's Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Animation.html#//apple_ref/doc/uid/TP40006556-CH57-SW1).
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allowfullscreen></iframe>
