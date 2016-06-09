@@ -8,7 +8,7 @@ excerpt: >
 
 The [Manila Web Makers](https://www.facebook.com/groups/ManilaWebMakers/) held its first meetup on May 13, 2016. Organizing and hosting meetups is a new thing for us at Fat Arrow and it's something we'd love to do regularly. We learned quite a bit from the experience which I'll detail in a different post. This one is about the talks.
 
-[Videos of the talks](#) are up on [Fat Arrow's YouTube channel](#). _The video of [Karlo Abapo's talk](#context-driven-testing) is still in post-production. I'll update this post and the playlist once it's done. Check back again soon._ Read on for a few of my notes on each talk.
+[Videos of the talks](https://www.youtube.com/playlist?list=PL5UP8m7CWd08jLCCzvdT-oYa4CzjOnLvt) are up on [Fat Arrow's YouTube channel](https://www.youtube.com/channel/UCVMVBMlcmWoT73arv_D_Ocw). _The video of [Karlo Abapo's talk](#context-driven-testing) is still in post-production. I'll update this post and the playlist once it's done. Check back again soon._ Read on for a few of my notes on each talk.
 
 
 ## My Journey to the Perfect CSS Preprocessor
@@ -19,7 +19,7 @@ He has experimented with LESS, Sass, and Stylus and cautions against getting too
 Jerico argues that, in the end, the choice is not that big of a deal. Pre-processors help you solve particular pain points in vanilla CSS but they won't guarantee a good architecture, which is the bigger issue with medium to large code bases.
 
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/96yjFEw7vq4" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -31,7 +31,7 @@ He broke down the syntax of the function and visually demonstrated how each argu
 To close his talk, Datu shared the importance of animation for user interfaces and some best practices from [Google's Material Design](https://material.google.com/motion/material-motion.html) and [Apple's Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Animation.html#//apple_ref/doc/uid/TP40006556-CH57-SW1).
 
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/wZRcrZeuj_I" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
