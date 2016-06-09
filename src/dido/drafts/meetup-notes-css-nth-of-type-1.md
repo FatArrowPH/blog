@@ -8,7 +8,7 @@ excerpt: >
 
 The [Manila Web Makers](https://www.facebook.com/groups/ManilaWebMakers/) held its first meetup on May 13, 2016. Organizing and hosting meetups is a new thing for us at Fat Arrow and it's something we'd love to do regularly. We learned quite a bit from the experience which I'll detail in a different post. This one is about the talks.
 
-[Videos of the talks](https://www.youtube.com/playlist?list=PL5UP8m7CWd08jLCCzvdT-oYa4CzjOnLvt) are up on [Fat Arrow's YouTube channel](https://www.youtube.com/channel/UCVMVBMlcmWoT73arv_D_Ocw). _The video of [Karlo Abapo's talk](#context-driven-testing) is still in post-production. I'll update this post and the playlist once it's done. Check back again soon._ Read on for a few of my notes on each talk.
+[Videos of the talks](https://www.youtube.com/playlist?list=PL5UP8m7CWd08jLCCzvdT-oYa4CzjOnLvt) are up on [Fat Arrow's YouTube channel](https://www.youtube.com/channel/UCVMVBMlcmWoT73arv_D_Ocw). _The video of [Karlo Abapo's talk](#context-driven-testing) is still in post-production. I'll update this post and the playlist once it's done. Check back again soon._ We had two scheduled talks by Jerico Aragon and Datu Arellano and an improptu lightning talk by Karlo Abapo. Read on for the videos and a few of my notes on each.
 
 
 ## My Journey to the Perfect CSS Preprocessor
