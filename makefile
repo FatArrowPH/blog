@@ -6,4 +6,7 @@ build:
 	@export NODE_ENV=development; \
 	node index.js
 
-.PHONY: watch build
+build-prod:
+	@node index.js
+
+.PHONY: watch build build-prod

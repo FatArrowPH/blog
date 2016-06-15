@@ -1,0 +1,17 @@
+language: node_js
+branches:
+  only:
+  - master
+install:
+- npm install
+script:
+- make build-prod
+after_success:
+- ./bin/deploy.sh
+before_install:
+- openssl aes-256-cbc -K $encrypted_ed99bbc13c9f_key -iv $encrypted_ed99bbc13c9f_iv
+  -in deploy-key.enc -out deploy-key -d
+env:
+  global:
+  - secure: O+LiC9W2ezPP10BK92qeUP8NS9oALKzgb7f0KVdefeKY/KvFf2WNQXcKw2EUKKfBEtuwcgpEW/prZDzmzVJl8rFrnhTzGPBIXq6eBHU7csKm4YHXtN/mraYqXGNrnnQZeSo0yatpojqG1tfzSn7JmrLPfcTcEfD8ODGzcqW1PHtVRan09w5f/27cHIhxHn80kMR0nWVlpmFGQgdqY/CKPkNuu69lfAHgJMcyPIiiXuzc5kuk0I8vKn32PT4KRZnSEsMdOUAZBv2rXsryzH9eYge0eGhxpfH5xe3WNcNQsyYOtkvDmg2ulhrg7ZiAwgQ9sm8+yljmVwPoszJSNs2i0iUFY3NoynW+su27qKgRhAzCxQ30fW98ijhbLLpl8DGhbNS0rdRjgnBBWYF9qytRBPkfKonvCbv/O7LXhWDhB/+1hiVK04dr6uXrcNRBvqeSS1JU4EtFMQw17nUx2HJO2dPUtK/+edz4FGYT3SgSRLtHehfnrXx2huh8tFakmJ1lbN2DWvJDBkMohAfqZuxlss5I3dgno7mYpWDAgztp9auzmfu4J+wVFRNV1qMEJTJ/u1Mq8gj7PuWN7AHivQcWTeUNHWMH4vI/1tn3vtpwWazqIWN+8Me++qVb9hqMnL8QaqT71vPcTfNvfgbJM6zs5xLUB796SLryX/b3mxuIy/E=
+  - secure: zkEdbD+4mMPgqddH/lvFiMdo2hv++e385D1kkQwbrTIwkvARJa0UP0DhQR5TFn/JJEArsluJMLCVzEN0nEOWCBQLmerUnE/7XpLK4dEU6pJuShCNPrJUG6C1Zrcn3dQC/DKVtLNBgk3hfHQatN5Bhp0iNdhE1sjSSqrqo/9H+rQ3qklXVvHsNS/7Jx5an7djvQmQPvhoA6hg/Ot+aZA3UZ3WI+cUOhS1Gt8NB86/jVjdo3iRxYK5suEpQ7OmYTSTjk031jtnjVSNzJz5IlxtV+thDTW3tQqDDMU3JFG/R45FpfPrn9rkQZoSmSQ6dOSLEWn5Xyf2NeGNAEkzW5+ua/u8sKg6p0fAvi9kq7G7meshjvHwzEz/CM+l5aksi+/33ZFtZRLEo4NtaGcxkubMYZcTk9cTCFTA2We+qsOrWsJgVXm65Pa62WrUtpg+iC/jPISpwYHweGDtFhcY6v1wi4gDTSYpokfXM+Srtl5xnwXebGYyEyLZjjwAzQ/lqCT6yq2+pDkSDe+9/aHG3UoNHrPqOniib7zStjkVrZXj0I6pDiwt7BeP3lfBm2SY6ZWYLlIR2OxwjO+IEZwdmYDeiHlSfhOypsoOKkwnpsth5X44Ah5ZnODn2NIUjfdgud9pylFT3+ON39x0rzase/ga+PYvG7E4imvfa26rn/bFfWg=
