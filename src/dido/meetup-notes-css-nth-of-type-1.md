@@ -1,7 +1,7 @@
 ---
 title: CSS:nth-of-type(1) Meetup Notes
 slug: meetup-notes-nth-of-type-1
-date: 2016-06-04
+date: 2016-06-20
 excerpt: >
     Manila Web Makers CSS:nth-of-type(1) Meetup Notes
 ---
