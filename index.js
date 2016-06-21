@@ -56,7 +56,7 @@ metalsmith(__dirname)
   }))
   .use(index())
   .use(layouts({ engine: 'pug', default: 'post.pug', pretty: true, md }))
-  .use(json())
+  .use(json(['title', 'excerpt', 'shareimg', 'contents']))
   .use(watch({
     paths: {
       '${source}/**/*': true,
