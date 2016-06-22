@@ -4,6 +4,8 @@ date: 2016-05-31
 author: Fatbot
 excerpt: >
     You can write _markdown_ in the excerpt yaml front-matter
+note: >
+    Write article _notes_ here in plain text or `markdown`.
 ---
 
 This is the lead paragraph. It's best to start your post with a paragraph instead of a heading. Lorem markdownum leges tam Iovis est pondera iuventus! Quae nasci tangit cum est *agros* et devorat, [cognovit inmunis](http://gifctrl.com/) feret, saniemque nuper opem terreris Minervae: Lyciamque.
