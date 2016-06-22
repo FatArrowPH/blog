@@ -1,7 +1,13 @@
 {
-  "name": "fat-arrow-static-blog-generator",
+  "name": "fat-arrow-blog",
+  "description": "Fat Arrow Static(ish) Blog Builder",
+  "homepage": "http://fat-arrow.com/blog",
   "version": "1.0.0",
   "author": "Dido Arellano <dido@fat-arrow.com>",
+  "contributors": [
+    "Datu Arellano <datu@fat-arrow.com>",
+    "Kitkat Dayrit <kitkat@fat-arrow.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "cheerio": "0.20.0",
@@ -18,5 +24,13 @@
     "moment": "2.13.0",
     "ncp": "2.0.0",
     "pug": "2.0.0-alpha8"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatArrowPH/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FatArrowPH/blog/issues"
   }
 }
