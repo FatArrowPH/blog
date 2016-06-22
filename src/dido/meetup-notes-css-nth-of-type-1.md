@@ -2,9 +2,12 @@
 title: CSS:nth-of-type(1) Meetup Notes
 slug: meetup-notes-nth-of-type-1
 date: 2016-06-20
+shareimg: '/blog-assets/img/nth-of-type-1-banner.jpg'
 excerpt: >
     Manila Web Makers CSS:nth-of-type(1) Meetup Notes
 ---
+
+![](/blog-assets/img/nth-of-type-1-banner.jpg)
 
 The [Manila Web Makers](https://www.facebook.com/groups/ManilaWebMakers/) held its first meetup on May 13, 2016. Organizing and hosting meetups is a new thing for us at Fat Arrow and it's something we'd love to do regularly. We learned quite a bit from the experience which I'll detail in a different post. This one is about the talks.
 
