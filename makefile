@@ -9,4 +9,10 @@ build:
 build-prod:
 	@node index.js
 
-.PHONY: watch build build-prod
+links:
+	@echo Input the full path to your fat-arrow.com repo:
+	@read site; \
+	ln --symbolic --interactive --no-target-directory $$PWD/build $$site/content/blog; \
+	ln --symbolic --interactive $$PWD/build/blog-assets $$site/public/
+
+.PHONY: watch build build-prod link
